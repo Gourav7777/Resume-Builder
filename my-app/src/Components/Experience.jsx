@@ -107,7 +107,7 @@ const Experience = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Experience;

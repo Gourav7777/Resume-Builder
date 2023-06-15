@@ -19,6 +19,8 @@ const AuthContextProvider = ({ children }) => {
   const [designation, setDesignation] = useState("");
   const [company, setCompany] = useState("");
   const [workedyears, setWorkedyears] = useState("");
+  const [skills, setSkills] = useState([])
+  const [currentskill, setCurrentSkill] = useState('')
   return (
     <AuthContext.Provider
       value={{
@@ -50,6 +52,10 @@ const AuthContextProvider = ({ children }) => {
         setCompany,
         workedyears,
         setWorkedyears,
+        skills,
+        setSkills,
+        currentskill, 
+        setCurrentSkill
       }}
     >
       {children}

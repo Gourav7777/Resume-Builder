@@ -22,7 +22,7 @@ const Exp = () => {
             </div>
 
             <div style={{
-                
+                marginTop:'10px',
                 paddingLeft:'10%',
                 paddingRight:'10%',
                 fontSize:'17px'

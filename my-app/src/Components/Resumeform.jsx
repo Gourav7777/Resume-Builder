@@ -5,6 +5,7 @@ import { AuthContext } from "../Context/AuthContextProvider";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import { BDiv } from "bootstrap-4-react";
+import Skills from "./Skills";
 const Resumeform = () => {
   const [exp, setExp] = useState([1]);
 
@@ -94,13 +95,22 @@ const Resumeform = () => {
 
         <h3>Add Experience here</h3>
         <BDiv shadow p="3" mb="5" bg="light" rounded>
-          <Experience />;
+          <Experience />
         </BDiv>
 
         <h3>Add Skills here</h3>
 
-        <Link to="/viewresume">click here to view resume</Link>
+        <BDiv shadow p="3" mb="5" bg="light" rounded>
+          <Skills/>
+        </BDiv>
+
+        <Link to="/viewresume" style={{
+          fontSize:'25px',
+          fontWeight: 'bold',
+          // color:'#2195dc'
+        }} >click here to view resume</Link>
       </div>
+      <br/>
     </>
   );
 };

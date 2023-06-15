@@ -1,7 +1,16 @@
 import React from 'react'
+import { useContext } from 'react';
+import { AuthContext } from '../Context/AuthContextProvider';
 
 const TechSkill = () => {
-    const skills = ['Javascript','Redux', 'PHP', 'HTML', 'CSS', 'Node Js']
+  const {
+  
+    skills,
+    setSkills,
+    currentskill,
+     setCurrentSkill
+  } = useContext(AuthContext);
+    // const skills = ['Javascript','Redux', 'PHP', 'HTML', 'CSS', 'Node Js']
   return (
     <div>
         <div>
@@ -21,6 +30,7 @@ const TechSkill = () => {
 
             </div>
             <div style={{
+              marginTop:'10px',
                 display:'grid',
                 gridTemplateColumns:'repeat(3,1fr)',
                 paddingLeft:'10%',
@@ -31,7 +41,7 @@ const TechSkill = () => {
     {
     
        skills.map((el)=>{
-         return <li>{el}</li>
+         return <li>{el.currentskill}</li>
        })
     }
 

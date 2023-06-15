@@ -24,7 +24,7 @@ const Educat = () => {
             }}>EDUCATION</h5>
 </div>
             <div style={{
-                
+                marginTop:'10px',
                 paddingLeft:'10%',
                 paddingRight:'10%',
                 fontSize:'17px'
