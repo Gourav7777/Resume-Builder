@@ -9,12 +9,20 @@ const Educat = () => {
 
 
 <div>
-            <h3 style={{
-                border:'1px solid black',
-                backgroundColor:'#d2e4e2',
-                paddingLeft:'10%'
-            }}>EDUCATION</h3>
+     
+<div style={{
+            border:'0px solid black',
+            backgroundColor:'#eefcff',
+            alignItems:'center',
+            padding:'5px'
 
+          }}>
+
+            <h5 style={{
+                
+                paddingLeft:'10%'
+            }}>EDUCATION</h5>
+</div>
             <div style={{
                 
                 paddingLeft:'10%',
@@ -40,7 +48,7 @@ const Educat = () => {
            
                <p style={{
                 marginTop:'0px'
-               }}>{el.passedYear}</p>
+               }}>{el.passedYear} Passed Out</p>
            </div>
          
        })

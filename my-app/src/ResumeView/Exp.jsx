@@ -7,11 +7,19 @@ const Exp = () => {
     <div>
 
 <div>
-            <h3 style={{
-                border:'1px solid black',
-                backgroundColor:'#d2e4e2',
+
+<div style={{
+            border:'0px solid black',
+            backgroundColor:'#eefcff',
+            alignItems:'center',
+            padding:'5px'
+
+          }}>
+            <h5 style={{
+                
                 paddingLeft:'10%'
-            }}>WORK EXPERIENCE</h3>
+            }}>WORK EXPERIENCE</h5>
+            </div>
 
             <div style={{
                 
@@ -23,18 +31,7 @@ const Exp = () => {
     {
     
        experience.map((el)=>{
-        //  return <div style={{
-        //     display:'flex',
-        //     justifyContent:'space-between'
-        //  }}>
-        //  <li>
-        //  {el.degree}
-              
-        //    </li>
-        //        <p style={{
-        //         marginTop:'0px'
-        //        }}>{el.passedYear}</p>
-        //    </div>
+     
 
         return <div style={{
             display:'flex',
@@ -51,7 +48,7 @@ const Exp = () => {
            
                <p style={{
                 marginTop:'0px'
-               }}>{el.workedyears}</p>
+               }}>{el.workedyears} Years </p>
            </div>
          
        })

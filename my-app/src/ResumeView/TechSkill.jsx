@@ -5,12 +5,21 @@ const TechSkill = () => {
   return (
     <div>
         <div>
-            <h3 style={{
-                border:'1px solid black',
-                backgroundColor:'#d2e4e2',
-                paddingLeft:'10%'
-            }}>TECHNICAL SKILLS</h3>
 
+          <div style={{
+            border:'0px solid black',
+            backgroundColor:'#eefcff',
+            alignItems:'center',
+            padding:'5px'
+
+          }}>
+
+            <h5 style={{
+              // backgroundColor:'#d2e4e2',
+              paddingLeft:'10%'
+            }}>TECHNICAL SKILLS</h5>
+
+            </div>
             <div style={{
                 display:'grid',
                 gridTemplateColumns:'repeat(3,1fr)',
