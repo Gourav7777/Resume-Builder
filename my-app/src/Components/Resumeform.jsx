@@ -20,9 +20,9 @@ const Resumeform = () => {
     setName,
   } = useContext(AuthContext);
 
-  const handleExp = () => {
-    setExp([...exp, 1]);
-  };
+  // const handleExp = () => {
+  //   setExp([...exp, 1]);
+  // };
 
   return (
     <>
@@ -89,7 +89,7 @@ const Resumeform = () => {
         </BDiv>
         <h3>Add Education here</h3>
 
-        <BDiv shadow  p="3" mb="5" bg="light" rounded>
+        <BDiv shadow p="3" mb="5" bg="light" rounded>
           <Education />
         </BDiv>
 
@@ -101,16 +101,21 @@ const Resumeform = () => {
         <h3>Add Skills here</h3>
 
         <BDiv shadow p="3" mb="5" bg="light" rounded>
-          <Skills/>
+          <Skills />
         </BDiv>
 
-        <Link to="/viewresume" style={{
-          fontSize:'25px',
-          fontWeight: 'bold',
-          // color:'#2195dc'
-        }} >click here to view resume</Link>
+        <Link
+          to="/viewresume"
+          style={{
+            fontSize: "25px",
+            fontWeight: "bold",
+            // color:'#2195dc'
+          }}
+        >
+          click here to view resume
+        </Link>
       </div>
-      <br/>
+      <br />
     </>
   );
 };
