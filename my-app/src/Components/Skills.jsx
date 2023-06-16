@@ -100,9 +100,9 @@ const Skills = () => {
       <div
         style={{
           gap: "10px",
-          // display: "flex",
+         
           marginTop: "10px",
-          // justifyContent: "space-between",
+        
         }}
       >
         <button
@@ -110,6 +110,7 @@ const Skills = () => {
             cursor: "pointer",
           }}
           onClick={addSkillsHere}
+          disabled={!currentskill}
         >
           Add Skill
         </button>

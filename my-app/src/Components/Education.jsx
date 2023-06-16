@@ -93,6 +93,7 @@ const Education = () => {
           style={{
             cursor: "pointer",
           }}
+          disabled={!active}
         >
           Add More Education field
         </button>
@@ -101,6 +102,7 @@ const Education = () => {
             cursor: "pointer",
           }}
           onClick={handleEdu}
+          disabled={!institute || !passedYear || !degree}
         >
           Submit
         </button>

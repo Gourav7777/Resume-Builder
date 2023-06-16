@@ -49,7 +49,7 @@ const Educat = () => {
                     marginTop: "0px",
                   }}
                 >
-                  {el.passedYear} Passed Out
+                  {el.passedYear}  Passed Out
                 </p>
               </div>
             );

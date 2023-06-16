@@ -94,6 +94,7 @@ const Experience = () => {
           style={{
             cursor: "pointer",
           }}
+          disabled={!activeExperience}
         >
           Add More Experience
         </button>
@@ -102,6 +103,7 @@ const Experience = () => {
           style={{
             cursor: "pointer",
           }}
+          disabled={!company || !workedyears || !designation}
         >
           Submit
         </button>
